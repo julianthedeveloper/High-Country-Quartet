@@ -1,0 +1,183 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* code to style images */
+
+img {
+  width: 300px;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.centered-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* this will center image */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* this will add curved styling to the image border */
+
+.image-circle {
+    border-radius: 50%; 
+}
+
+/* header styling */
+
+header {
+  background-color: rgba(255, 255, 255, 0.2); /* RGB values + alpha */
+}
+
+header h1, h3 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #153d66;
+  line-height: 3.5; /* Adjust line height as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+header h1 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 58px;
+}
+
+header h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+/* main styling */
+
+/* main {
+  background-image: url(images/background-image.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffff;
+}
+
+/* class below used to determine width of div containers */
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* semi transparent containers */
+
+.container {
+  background-color: rgba(21, 61, 102, 0.4); 
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding as needed */
+  margin: 20px; /* Add margin as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+/* styling for main content headers and paragraphs */
+
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5; /* Adjust line height as needed */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5; /* Adjust line height as needed */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.centered-text {
+  text-align: center;
+}
+
+/* styling for the image */
+
+.right-aligned-image {
+  float: right;
+  margin: 0 0 10px 10px; /* Adjust margins as needed */
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0);
+}
+
+.text-containers {
+  flex: 2;
+}
+
+/* style for lists */
+
+ul, ol {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* horizontal ruler width set to same as wrapper width */
+
+hr {
+  max-width: 600px;
+}
+
+/* below is pseudo class styling */
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+a:link    { color: green;  }
+a:visited { color: #3CB371	;   }
+a:hover   { color: #153d66; }
+a:active  { color: darkgreen;  }
+
+/* footer styling */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(21, 61, 102, 0.8); /* #153d66 with 20% transparency */
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
