@@ -1,183 +1,514 @@
-html {
-  height: 100%;
-  width: 100%;
-}
-
-/* code to style images */
-
-img {
-  width: 300px;
-}
-
-.centered-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Adjust as needed */
-}
-
-.centered-image img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* this will center image */
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* this will add curved styling to the image border */
-
-.image-circle {
-    border-radius: 50%; 
-}
-
-/* header styling */
-
-header {
-  background-color: rgba(255, 255, 255, 0.2); /* RGB values + alpha */
-}
-
-header h1, h3 {
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #153d66;
-  line-height: 3.5; /* Adjust line height as needed */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-header h1 {
-  margin: 0;
-  padding-top: 20px;
-  font-size: 58px;
-}
-
-header h3 {
-  font-size: 25px;
-  padding-bottom: 20px;
-}
-
-/* main styling */
-
-/* main {
-  background-image: url(images/background-image.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-} */
+/* -------  General Styles ------- */
 
 body {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 50px;
-  background-image: url(images/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #ffff;
+  font-family: "Cormorant Garamond", serif;
+  color: #2d2d2d;
 }
-
-/* class below used to determine width of div containers */
-
-.wrapper {
-  max-width: 800px;
-  margin: auto;
-}
-
-/* semi transparent containers */
-
-.container {
-  background-color: rgba(21, 61, 102, 0.4); 
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Add padding as needed */
-  margin: 20px; /* Add margin as needed */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
-}
-
-/* styling for main content headers and paragraphs */
 
 h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0 0px 0px 0px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5; /* Adjust line height as needed */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5; /* Adjust line height as needed */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.5em;
+  margin: 0;
 }
 
-.centered-text {
-  text-align: center;
+/* font */
+
+.montserrat-accordion {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* styling for the image */
-
-.right-aligned-image {
-  float: right;
-  margin: 0 0 10px 10px; /* Adjust margins as needed */
+.cormorant-garamond-light {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.content-wrapper {
+.cormorant-garamond-regular {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-garamond-medium {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-garamond-semibold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-garamond-bold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cormorant-garamond-light-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.cormorant-garamond-regular-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cormorant-garamond-medium-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.cormorant-garamond-semibold-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.cormorant-garamond-bold-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+section {
+  padding: 50px;
+  background-color: #c2d2d8;
+}
+
+
+section.alternate-background {
+  background-color: #F6F6F6;
+  color: #2d2d2d;
+}
+
+main img {
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
 }
 
-.image-container {
+.item {
   flex: 1;
-  padding: 20px;
+  margin: 10px;
 }
 
-.image-container img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0);
-}
-
-.text-containers {
+.item-double {
   flex: 2;
 }
 
-/* style for lists */
+/* -------  Navigation ------- */
 
-ul, ol {
-  font-family: Arial, Helvetica, sans-serif;
+header {
+  background-color: #ffffff;
+  padding: 20px 20px 0 20px;
+  height: 80px;
+  text-align: center;
 }
 
-/* horizontal ruler width set to same as wrapper width */
-
-hr {
-  max-width: 600px;
+.logo {
+  font-family: "Cormorant Garamond", cursive;
+  font-size: 30px;
+  color: #4A8BA6;
 }
 
-/* below is pseudo class styling */
-
-a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+header nav ul li {
+  list-style-type: none;
 }
 
-a:link    { color: green;  }
-a:visited { color: #3CB371	;   }
-a:hover   { color: #153d66; }
-a:active  { color: darkgreen;  }
+header nav ul li a {
+  color: #4A8BA6;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
 
-/* footer styling */
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+
+/* -------  Footer ------- */
 
 footer {
-  position: fixed;
-  bottom: 0;
+  background-color: #63808e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* New Code */
+
+#menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+
+/* ------- Welcome Section ------- */
+
+#welcome {
+  position: relative;
+  text-align: center;
+  height: calc(100vh - 200px); /* Takes up 100% of the viewport height */
+  overflow: hidden;
+  background: url('images/background2.png') no-repeat center center; /* Background image */
+  background-size: cover; /* Ensures the image covers the entire section */
+}
+
+#welcome-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#welcome-img img {
+  width: 100%;
+  display: block;
+}
+
+.image-container {
+  text-align: center; /* Center the image horizontally */
+}
+
+.centered-image {
+  width: auto;
+  height: auto;
+  max-width: 80%; /* Ensures the image doesn't exceed the specified width */
+  display: inline-block; /* Ensures there are no extra spaces at the bottom */
+}
+
+.image-border {
+  border: 5px solid white;
+  max-width: 96%;
+}
+
+#welcome-message {
+  position: absolute;
+  top: 50%;
   left: 0;
   width: 100%;
-  background-color: rgba(21, 61, 102, 0.8); /* #153d66 with 20% transparency */
-  color: #ffff;
-  font-family: Arial, Helvetica, sans-serif;
+  transform: translateY(-50%);
+}
+
+#welcome-message h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  /* Additional styling as needed */
+}
+
+#welcome-message h2 {
+  color: white;
+  font-size: 20px;
+  /* Additional styling as needed */
+}
+
+/* about section */
+
+#about_heading {
+  margin-top: 20px;
+}
+
+#about_heading h2 {
+  text-align: left;
+}
+
+.about_text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about_text p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+
+/* Quote Heading */
+
+.quote_heading {
+  background-color: #63808e;
+  padding: 10px;
+}
+
+.quote_heading h2 {
+  color: white;
+  font-size: 20px;
+}
+
+/* Music */
+
+#music {
+  text-align: left;
+}
+
+#music h2 {
+  text-align: left;
+}
+
+#music-library p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#music img {
+  margin-bottom: 15px;
+}
+
+/* Music Dropdowns */
+
+/* Hidden by default */
+.hidden {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* Add some basic styling */
+.accordion-button {
+  background-color: #4A8BA6;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.accordion-button .icon {
+  margin-left: 10px;
+}
+
+.accordion-button:hover {
+  background-color: #3A6A86;
+}
+
+/* Extra content animation */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.hidden {
+  display: block;
+}
+
+.accordion-content p {
+  margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 768px) {
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+}
+
+.logo {
+  font-size: 40px;
+}
+
+/* ------- Welcome Section ------- */
+
+#welcome {
+  position: relative;
   text-align: center;
+}
+
+#welcome-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#welcome-img img {
+  width: 100%;
+  display: block;
+}
+
+.image-container {
+  text-align: center; /* Center the image horizontally */
+}
+
+.centered-image {
+  width: auto;
+  height: auto;
+  max-width: 300px; /* Ensures the image doesn't exceed the specified width */
+  display: inline-block; /* Ensures there are no extra spaces at the bottom */
+}
+
+#welcome-message {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+#welcome-message h1 {
+  color: white;
+  font-size: 2em;
+  /* Additional styling as needed */
+}
+
+#welcome-message h2 {
+  color: white;
+  font-size: 2em;
+  /* Additional styling as needed */
+}
+
+#join {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+#join-img {
+  flex: 2;
+}
+
+#join-form {
+  flex: 1;
+}
+
+#about {
+  padding: 30px;
+}
+
+#about h2 {
+  padding-bottom: 10px;
+}
+
+#about img {
+  margin: 0;
+}
+
+#about_flex {
+  display: flex;
+  gap: 20px;
+}
+
+.about_item {
+  flex: 1;
+}
+
+#about_text {
+  margin-top: 20px;
+  flex: 2;
+}
+
+#download {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  align-items: center;
+}
+
+#download div img {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+#download div {
+  flex: 1;
+}
+
+#blog {
+  padding: 30px;
+}
+
+#blog h2 {
+  padding-bottom: 10px;
+}
+
+#blog img {
+  margin: 0;
+}
+
+#blog_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#blog_top {
+  display: flex;
+  gap: 20px;
+}
+
+#blog_top_left {
+  flex: 1;
+}
+
+#blog_top_right {
+  flex: 1;
+}
+
+#blog_bottom {
+  display: flex;
+  gap: 20px;
+}
+
 }
