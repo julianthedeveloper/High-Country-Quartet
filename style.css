@@ -133,7 +133,7 @@ main img {
 header {
   background-color: #ffffff;
   padding: 20px 20px 0 20px;
-  height: 80px;
+  height: 60px;
   text-align: center;
 }
 
@@ -145,11 +145,13 @@ header {
 
 header nav ul li {
   list-style-type: none;
+  margin-bottom: 10px;
 }
 
 header nav ul li a {
   color: #4A8BA6;
   text-decoration: none;
+  font-size: 40px;
   padding: 0 20px 0 0;
 }
 
@@ -174,19 +176,61 @@ footer p {
 
 /* New Code */
 
-#menu {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #ffffff;
+  color: #4a8aa5;
+  list-style: none;
+  padding-top: 4rem;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
+.showMenu {
+  transform: translateY(0);
+}
+
+.menuItem {
+  padding-right: 0px;
+}
+
+
+/* Hamburger */
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  margin-top: 8px;
+  border: white solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.material-icons {
+  color: #818181;
+}
 
 /* ------- Welcome Section ------- */
 
 #welcome {
   position: relative;
   text-align: center;
-  height: calc(100vh - 200px); /* Takes up 100% of the viewport height */
+  height: calc(100vh - 180px); /* Takes up 100% of the viewport height */
   overflow: hidden;
   background: url('images/background2.png') no-repeat center center; /* Background image */
   background-size: cover; /* Ensures the image covers the entire section */
@@ -288,6 +332,7 @@ footer p {
 }
 
 #music img {
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -303,7 +348,7 @@ footer p {
 
 /* Add some basic styling */
 .accordion-button {
-  background-color: #4A8BA6;
+  background-color: #4a8aa5;
   color: white;
   padding: 10px 20px;
   width: 100%;
@@ -314,6 +359,8 @@ footer p {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .accordion-button .icon {
@@ -340,12 +387,119 @@ footer p {
 }
 
 
+/* Featured Music */
+.featured-music {
+  text-align: center;
+}
+
+.featured-music h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+section a {
+  color: #4A8BA6;
+  text-decoration: none;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+ section a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
 
 
 
+/* #experience {
+  background-color:#3A6A86;
+} */
+
+#experience h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.experience-item {
+  text-align: left;
+  margin-top: 15px;
+  padding: 15px 15px 15px 15px;
+  background-color: rgba(255, 255, 255, 0.2); /* 50% transparent white */
+  border-radius: 2px;
+}
+
+.experience-item h3 {
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.experience-item .accordion-button {
+  background-color: rgba(253, 253, 253, 0);
+  color: rgb(86, 86, 86);
+  padding: 0px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.experience-item .icon {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* Links */
 
 
+.quartet-background {
+  width: 300px;
+  height: 150px;
+  background-image: url('images/string-quartet-clipart3.png'); /* Replace with your image path */
+  background-position: center; /* Centers the image */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 20px 20px 20px 20px; /* Adds some padding for better presentation */
+}
 
+#links-logo {
+  display: flex;
+  justify-content: center; 
+}
+
+#links .logo {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#links {
+  text-align: center;
+}
+
+
+#links h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+#links p {
+  margin-top: 15px;
+}
 
 
 
@@ -363,12 +517,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .logo {
   font-size: 40px;
 }
+
+
+
 
 /* ------- Welcome Section ------- */
 

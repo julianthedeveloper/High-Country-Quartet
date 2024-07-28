@@ -17,6 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -24,13 +25,21 @@
   <header>
     <div class="logo">High Country Quartet</div>
     <nav>
-      <ul id="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#listen">Listen</a></li>
-        <li><a href="#inquire">Inquire</a></li>
+
+      <ul class="menu">
+        <li><a class="menuItem" href="#home">Home</a></li>
+        <li><a class="menuItem" href="#about">About</a></li>
+        <li><a class="menuItem" href="#services">Services</a></li>
+        <li><a class="menuItem" href="#listen">Listen</a></li>
+        <li><a class="menuItem" href="#inquire">Inquire</a></li>
       </ul>
+
+      <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
+
     </nav>
   </header>
 
@@ -81,10 +90,10 @@
         </div>
 
         <div id="music-library">
-          <h2>Our music library is constantly growing.</h2>
-          <p>We have hand-picked hundreds of string quartet arrangements across all genres and follow seasonal trends.
+          <h2>Something about having a huge library of music!</h2>
+          <p>Photo above will eventually be a new photo showing the string quartet performing in a picturesque setting.
           </p>
-          <p>Below are some of 2024's trendiest setlists!</p>
+          <p>Some of our setlists below!</p>
         </div>
 
         <div class="accordion-block">
@@ -101,20 +110,7 @@
             </ul>
           </div>
 
-          <button class="accordion-button">BRIDGERTON<span class="icon">+</span></button>
-          <div class="accordion-content">
-            <ul>
-              <li>Wildest Dreams</li>
-              <li>POV</li>
-              <li>Yellow</li>
-              <li>In My Blood</li>
-              <li>Thank U, Next</li>
-              <li>You Belong With Me</li>
-              <li>Girls Like You</li>
-            </ul>
-          </div>
-
-          <button class="accordion-button">UPBEAT JAZZ<span class="icon">+</span></button>
+          <button class="accordion-button">JAZZY COCKTAIL HOUR<span class="icon">+</span></button>
           <div class="accordion-content">
             <ul>
               <li>Cheek To Cheek</li>
@@ -127,7 +123,80 @@
             </ul>
           </div>
 
+          <button class="accordion-button">BRIDGERTON<span class="icon">+</span></button>
+          <div class="accordion-content">
+            <ul>
+              <li>Wildest Dreams</li>
+              <li>POV</li>
+              <li>Yellow</li>
+              <li>In My Blood</li>
+              <li>Thank U, Next</li>
+              <li>You Belong With Me</li>
+              <li>Girls Like You</li>
+            </ul>
+          </div>
         </div>
+
+      </div>
+    </section>
+
+    <section id="featured-music" class="alternate-background">
+      <div>
+        <div class="featured-music">
+          <h2>FEATURED MUSIC</h2>
+          <p>music videos (3 or 4) can go here.</p>
+          <a href="#music">More music ⇒</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote_heading">
+      <div>
+        <h2>What's it like to work with us? (eventually a testimonial quote here)</h2>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="experience-heading">
+        <h2>THE HIGH COUNTRY QUARTET EXPERIENCE</h2>
+      </div>
+
+      <div class="experience-item">
+        <h3 class="accordion-button">Professional & Friendly<span class="icon">+</span></h3>
+        <div class="accordion-content"><p>We are a young and energetic string quartet with several years of combined
+          experience. Our members are full-time musicians and we're passionate about giving you the best possible
+          experience and the highest quality music.</p>
+        <a href="#about">Learn more about us ⇒</a>
+      </div>
+      </div>
+
+      <div class="experience-item">
+        <h3 class="accordion-button">Musically Versatile<span class="icon">+</span></h3>
+        <div class="accordion-content"><p>We have experience playing all kinds of music and events. From contemporary
+          classical music permiers in a concert setting to pop background music for a private event, our experience goes
+          far beyond your typical weddings and events!</p>
+        <a href="#services">Read about our services ⇒</a>
+      </div>
+      </div>
+
+      <div class="experience-item">
+        <h3 class="accordion-button">Easy Process<span class="icon">+</span></h3>
+        <div class="accordion-content"><p>We'll walk you through the entire process of planning the music for your event and
+          will be on call to answer any questions you have along the way.</p>
+        <a href="#services">Send us a note! ⇒</a>
+      </div>
+      </div>
+
+    </section>
+
+    <section id="links" class="alternate-background">
+      <div id="links-logo">
+        <div class="logo quartet-background">High Country Quartet</div>
+      </div>
+      <div>
+        <h2>CONTACT</h2>
+        <p><a href="#">highcountryquartet@gmail.com</a></p>
+        <p><a href="#inquire">Inquire about your event ⇒</a></p>
       </div>
     </section>
 
